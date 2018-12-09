@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "25018678940",
+    "firebase_url": "https://sapiads-d69a5.firebaseio.com",
+    "project_id": "sapiads-d69a5",
+    "storage_bucket": "sapiads-d69a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25018678940:android:135061189ba1e20f",
+        "android_client_info": {
+          "package_name": "hunor.ms.sapientia.ro.sapiads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25018678940-hvu13mk04jh0b4rmvgo58hredpus1vf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hunor.ms.sapientia.ro.sapiads",
+            "certificate_hash": "33dfa187014c14d38aa4b5ba887c3db04a201ecf"
+          }
+        },
+        {
+          "client_id": "25018678940-qb3ko6ic82255di9vs963q7koa73o9rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLWuv4cEBZt6QdFH0jTa0An_8cIZlSF_Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25018678940-qb3ko6ic82255di9vs963q7koa73o9rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
