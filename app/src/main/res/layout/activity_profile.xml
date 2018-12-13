@@ -26,6 +26,8 @@
         android:background="@color/colorPrimary"
         android:text="Logout"
         android:textAllCaps="false"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true" />
 
 </RelativeLayout>

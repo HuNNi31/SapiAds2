@@ -1,8 +1,10 @@
 package hunor.ms.sapientia.ro.sapiads;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.editTextPhone);
 
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("user");
+        ref = database.getReference("User");
 
         findViewById(R.id.reg_btn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ref.addListenerForSingleValueEvent(new ValueEventListener() {
 
+                    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         User user = new User(editText.getText().toString());
@@ -77,13 +80,13 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else{
-                            Toast.makeText(getApplicationContext(),"bandi's here ",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"not registered",Toast.LENGTH_LONG).show();
                         }
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        //bandi swag
+
                     }
                 });
             }
