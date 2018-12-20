@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SapiAds</string>
+    <string name="textview">TextView</string>
 </resources>

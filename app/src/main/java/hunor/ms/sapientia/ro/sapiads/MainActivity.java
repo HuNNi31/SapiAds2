@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.editTextPhone);
 
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("User");
+        ref = database.getReference("user");
 
         findViewById(R.id.reg_btn).setOnClickListener(new View.OnClickListener() {
             @Override
