@@ -8,6 +8,7 @@ public class DetailsActivity extends AppCompatActivity {
 
 
     TextView text1;
+    TextView asd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
